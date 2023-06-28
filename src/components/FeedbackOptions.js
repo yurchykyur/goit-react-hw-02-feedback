@@ -6,6 +6,11 @@ import {
   FeedbackBtn,
 } from './FeedbackOptions.styled';
 
+/**
+ * function that creates the markup for the component
+ * @param {Props} props
+ * @returns the generated markup for the component
+ */
 export default function FeedbackOptions({ options, onLeaveFeedback }) {
   return (
     <FeedbackContainer>

@@ -7,6 +7,11 @@ import {
   StatNum,
 } from './Statistics.styled';
 
+/**
+ * function that creates the markup for the component
+ * @param {Props} props
+ * @returns the generated markup for the component
+ */
 export default function Statistics(props) {
   const arrOfKeysValues = Object.entries(props);
 
@@ -18,7 +23,9 @@ export default function Statistics(props) {
             <StatText>
               {key === 'positivePercentage' ? 'Positive feedback:' : key}
             </StatText>
-            <StatNum>{value}</StatNum>
+            <StatNum>
+              {key === 'positivePercentage' ? `${value}%` : value}
+            </StatNum>
           </StatItem>
         );
       })}

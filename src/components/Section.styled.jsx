@@ -11,5 +11,5 @@ export const ComponentsSection = styled.section`
 `;
 
 export const SectionTitle = styled.h2`
-    margin: 0;
+  margin: 0;
 `;
